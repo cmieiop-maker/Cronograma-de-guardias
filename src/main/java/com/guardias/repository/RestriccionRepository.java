@@ -1,0 +1,2 @@
+package com.guardias.repository; import com.guardias.model.Restriccion; import org.springframework.data.jpa.repository.JpaRepository; import java.time.LocalDate; import java.util.*;
+public interface RestriccionRepository extends JpaRepository<Restriccion,Long>{boolean existsByPersonaIdAndFecha(Long personaId,LocalDate fecha); List<Restriccion> findByFechaBetweenOrderByFechaAsc(LocalDate desde,LocalDate hasta);}
