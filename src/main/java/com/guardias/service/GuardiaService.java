@@ -357,8 +357,5 @@ public Map<String, Object> estadisticas(YearMonth ym) {
     r.put("personas", out);
 
     return r;
-}
-```
 
-}
 
